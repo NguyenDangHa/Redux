@@ -5,7 +5,7 @@ var initialState = {};
 const Profiles = (state = initialState, action) => {
     switch (action.type) {
         case types.showData:
-            console.log(action)
+            //console.log(action)
             if (action.profiles) {
                 state = action.profiles
             }
