@@ -2,6 +2,16 @@ import {
     StyleSheet
 } from 'react-native';
 export default StyleSheet.create({
+    container: {
+        flex: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    viewTop: {
+        flex: 9,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     viewButton: {
         width: 250,
         height: 50,
@@ -15,6 +25,27 @@ export default StyleSheet.create({
         textAlign: 'center',
         color: 'rgb(255,255,255)',
         fontWeight: 'bold'
+    },
+    tabbar: {
+        backgroundColor: 'rgb(255,255,255)',
+        width: '100%',
+        flex: 1,
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
+    textBottom: {
+        fontWeight: 'bold',
+        color: 'rgb(255,255,255)',
+        textAlign: 'center',
+    },
+    btnClick: {
+        backgroundColor: 'rgb(186,12,47)',
+        width: 100,
+        height: 46,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     itemList: {
         backgroundColor: '#f0ffff',

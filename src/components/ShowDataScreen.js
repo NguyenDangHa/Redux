@@ -16,7 +16,7 @@ class ShowDataScreen extends Component {
         const { profile } = this.props;
         var elmProfile = profile !== null ?
             (<View style={styles.itemList}>
-                <Text style={styles.textItem}> Id :     {profile.id},</Text>
+                <Text style={styles.textItem}>  Id :    {profile.id},</Text>
                 <Text style={styles.textItem2}> Age :   {profile.employee_age}</Text>
                 <Text style={styles.textItem2}> Name :  {profile.employee_name}</Text>
                 <Text style={styles.textItem2}> Price : {profile.employee_salary}</Text>
