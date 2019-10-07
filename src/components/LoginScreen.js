@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, Alert } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
 import styles from '../assets/styles/loginScreen.style';
@@ -17,6 +17,46 @@ class LoginScreen extends Component {
                 Actions.showdata()
             })
             .catch((err) => console.log(err))
+    }
+    showAlert = () => {
+        Alert.alert(
+            'Alert Title',
+            'My Alert Msg',
+            [
+                {
+                    text: 'Ask me later',
+                    onPress: () => console.log('Ask me later pressed')
+                },
+                {
+                    text: 'Cancel',
+                    onPress: () => console.log('Cancel Pressed'),
+                    style: 'cancel',
+                },
+                {
+                    text: 'OK',
+                    onPress: () => this.alertOk()
+                },
+            ],
+            { cancelable: false },
+        );
+    }
+    alertOk = () => {
+        Alert.alert(
+            'Alo 12345',
+            'We are trying the machine !',
+            [
+                {
+                    text: 'Ask me later',
+                    onPress: () => console.log('Ask me later pressed')
+                },
+                {
+                    text: 'Cancel',
+                    onPress: () => console.log('Cancel Pressed'),
+                    style: 'cancel',
+                },
+            ],
+            { cancelable: false },
+        );
     }
     render() {
         return (
@@ -38,19 +78,19 @@ class LoginScreen extends Component {
                 </View>
 
                 <View style={styles.tabbar}>
-                    <TouchableOpacity activeOpacity={1} onPress={()=>{Actions.addProduct()}}>
+                    <TouchableOpacity activeOpacity={1} onPress={() => { Actions.addProduct() }}>
                         <View style={styles.btnClick}>
                             <Text style={styles.textBottom}>Home</Text>
                         </View>
                     </TouchableOpacity>
 
-                    <TouchableOpacity activeOpacity={1} onPress={()=>{Actions.showdata()}}>
+                    <TouchableOpacity activeOpacity={1} onPress={() => { Actions.showdata() }}>
                         <View style={styles.btnClick}>
                             <Text style={styles.textBottom}>Profiles</Text>
                         </View>
                     </TouchableOpacity>
 
-                    <TouchableOpacity  activeOpacity={1} onPress={()=>{Actions.list()}}>
+                    <TouchableOpacity activeOpacity={1} onPress={() => this.showAlert()}>
                         <View style={styles.btnClick}>
                             <Text style={styles.textBottom}>Settings</Text>
                         </View>
