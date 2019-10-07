@@ -4,6 +4,7 @@ import AddEmployees from '../components/AddEmployees';
 import ListEmployees from '../components/ListEmployees';
 import Login from '../components/LoginScreen';
 import ShowDataScreen from '../components/ShowDataScreen';
+import FootballScreen from '../components/FootballScreen';
 
 class Routers extends Component{
     render () {
@@ -33,6 +34,12 @@ class Routers extends Component{
                         key="showdata"
                         component={ShowDataScreen}
                         title="Show Data"
+                        hideNavBar                    
+                    />
+                     <Scene
+                        key="football"
+                        component={FootballScreen}
+                        title="Football"
                         hideNavBar                    
                     />
                 </Stack>

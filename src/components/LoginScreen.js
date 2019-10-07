@@ -18,6 +18,7 @@ class LoginScreen extends Component {
             })
             .catch((err) => console.log(err))
     }
+
     showAlert = () => {
         Alert.alert(
             'Alert Title',
@@ -84,7 +85,7 @@ class LoginScreen extends Component {
                             </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity >
+                        <TouchableOpacity onPress={()=>{Actions.football()}}>
                             <View style={styles.btnHorizontal}>
                                 <Text style={styles.textBottom}>Bóng đá</Text>
                             </View>
@@ -111,6 +112,42 @@ class LoginScreen extends Component {
                         <TouchableOpacity activeOpacity={1}>
                             <View style={styles.btnHorizontal}>
                                 <Text style={styles.textBottom}>Truyện cười</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity activeOpacity={1}>
+                            <View style={styles.btnHorizontal}>
+                                <Text style={styles.textBottom}>Kinh doanh</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity activeOpacity={1}>
+                            <View style={styles.btnHorizontal}>
+                                <Text style={styles.textBottom}>Thị trường</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity activeOpacity={1}>
+                            <View style={styles.btnHorizontal}>
+                                <Text style={styles.textBottom}>Sức khỏe</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity activeOpacity={1}>
+                            <View style={styles.btnHorizontal}>
+                                <Text style={styles.textBottom}>Phái đẹp</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity activeOpacity={1}>
+                            <View style={styles.btnHorizontal}>
+                                <Text style={styles.textBottom}>Ẩm thực</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity activeOpacity={1}>
+                            <View style={styles.btnHorizontal}>
+                                <Text style={styles.textBottom}>Ngoại hạng Anh</Text>
                             </View>
                         </TouchableOpacity>
                     </View>

@@ -37,10 +37,10 @@ export default StyleSheet.create({
     textBottom: {
         fontWeight: 'bold',
         color: 'rgb(255,255,255)',
-        textAlign: 'center',
+        textAlign: 'center'
     },
     btnClick: {
-        backgroundColor: 'rgb(186,12,47)',
+        backgroundColor: 'rgb(159,34,78)',
         width: 100,
         height: 46,
         borderRadius: 10,
@@ -48,13 +48,13 @@ export default StyleSheet.create({
         alignItems: 'center'
     },
     btnHorizontal:{
-        backgroundColor: '#556b2f',
+        backgroundColor: 'rgb(120,180,61)',
         width: 80,
         height: 40,
         borderRadius: 8,
         justifyContent: 'center',
         alignItems: 'center',        
-        margin:10
+        margin:8
     },
     itemList: {
         backgroundColor: '#f0ffff',
