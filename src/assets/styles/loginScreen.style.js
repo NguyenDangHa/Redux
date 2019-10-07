@@ -3,7 +3,7 @@ import {
 } from 'react-native';
 export default StyleSheet.create({
     container: {
-        flex: 10,
+        flex: 11,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -46,6 +46,15 @@ export default StyleSheet.create({
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    btnHorizontal:{
+        backgroundColor: '#556b2f',
+        width: 80,
+        height: 40,
+        borderRadius: 8,
+        justifyContent: 'center',
+        alignItems: 'center',        
+        margin:10
     },
     itemList: {
         backgroundColor: '#f0ffff',
